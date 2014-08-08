@@ -1,0 +1,22 @@
+#!/bin/bash
+#########################################################################
+##Used to update my local copies of repositories before I make changes ##
+##for pull requests                                                    ##
+#########################################################################
+cd android_device_pantech_msm8x60-common
+git pull pdt cm-11.0
+git push origin
+cd ..
+cd android_device_pantech_msm8660-common
+git pull pdt cm-11.0
+git push origin
+cd ..
+cd android_device_pantech_presto
+git pull pdt cm-11.0
+git push origin
+cd ..
+cd android_kernel_pantech_msm8660-common
+git pull pdt cm-11.0
+git push origin
+cd ..
+
