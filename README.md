@@ -1,5 +1,7 @@
 my_PDT_scripts
 ==============
+These are old and deprecated. This device is no longer maintained.
+This is an archive.
 
 Various scripts I use to keep my repos on track with PDT sources.
 

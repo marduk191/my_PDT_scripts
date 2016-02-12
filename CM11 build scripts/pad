@@ -1,0 +1,28 @@
+#!/bin/bash
+## Android p9070 boot image padder
+## By marduk191
+## email: marduk191@gmail.com
+recpath=/media/marduk191/b59ee394-ecc6-45b0-b5e6-244bb44528ae/NEW/cm11/target/product/presto
+while getopts ":brh" flags;
+do
+    case $flags in
+b)
+	##Pad bootimg
+	dd if=/dev/zero of=$recpath/boot.img bs=4096 count=1 oflag=append conv=notrunc
+	;;
+r)
+	## Pad recovery
+	dd if=/dev/zero of=$recpath/recovery.img bs=4096 count=1 oflag=append conv=notrunc
+	;;
+h)
+	## Help
+	  echo "./pad -b: pads boot.img and ./pad -r: pads recovery.img " 
+	;;
+*)
+            ## invalid option
+	    echo "invalid option -$OPTARG" 
+            ;;
+    esac
+done
+
+echo "run with the -h switch for help"

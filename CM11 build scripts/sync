@@ -1,0 +1,4 @@
+#!/bin/bash
+sudo sysctl -w net.ipv4.tcp_window_scaling=0
+time repo sync -j16
+./vendor/cm/get-prebuilts

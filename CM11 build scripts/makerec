@@ -1,0 +1,14 @@
+#!/bin/bash
+export ANDROID_JAVA_HOME=$JAVA_HOME
+export PATH=${PATH}:~/android-sdk/tools
+export PATH=${PATH}:~/android-sdk/platform-tools
+export PATH=${PATH}:~/bin
+export USE_CCACHE=1
+export CCACHE_DIR=/media/marduk191/b59ee394-ecc6-45b0-b5e6-244bb44528ae/ccache
+export CCACHE_HASHDIR=$CCACHE_DIR
+export OUT_DIR_COMMON_BASE=/media/marduk191/b59ee394-ecc6-45b0-b5e6-244bb44528ae/NEW
+. build/envsetup.sh
+lunch full_presto-userdebug 
+make installclean
+time make recoveryimage -j9
+

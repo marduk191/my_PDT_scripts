@@ -1,0 +1,4 @@
+#!/bin/bash
+adb reboot bootloader
+cd /media/marduk191/b59ee394-ecc6-45b0-b5e6-244bb44528ae/NEW/cm11/target/product/presto
+fastboot boot recovery.img

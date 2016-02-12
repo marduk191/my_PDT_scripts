@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project name="marduk191/android_device_pantech_presto" path="device/pantech/presto" remote="github" revision="du4.4" />
+   <project name="PantechDevTeam/android_device_pantech_msm8x60-common" path="device/pantech/msm8x60-common" remote="github" revision="cm-11.0" />
+  <project name="PantechDevTeam/android_device_pantech_msm8660-common" path="device/pantech/msm8660-common" remote="github" revision="cm-11.0" />
+  <project name="PantechDevTeam/android_kernel_pantech_msm8660-common" path="kernel/pantech/msm8660-common" remote="github" revision="cm-11.0" />
+  <project name="PantechDevTeam/android_vendor_pantech_msm8x60-common" path="vendor/pantech/msm8x60-common" remote="github" revision="cm-11.0" />
+  <project name="PantechDevTeam/android_vendor_pantech_presto" path="vendor/pantech/presto" remote="github" revision="cm-11.0" />
+  <remove-project name="android_bootable_recovery" />
+  <remove-project name="frameworks_base" />
+  <remove-project name="android_hardware_libhardware_legacy" />
+  <remove-project name="android_hardware_qcom_audio-caf" />
+  <project name="marduk191/android_bootable_recovery" path="bootable/recovery" remote="github" revision="android-4.4" />
+  <project name="marduk191/frameworks_base" path="frameworks/base" remote="github" />
+  <project name="PantechDevTeam/android_hardware_libhardware_legacy" path="hardware/libhardware_legacy" remote="github" revision="cm-11.0" />
+  <project name="PantechDevTeam/android_hardware_qcom_audio-caf" path="hardware/qcom/audio-caf" remote="github" revision="cm-11.0" />
+</manifest>
